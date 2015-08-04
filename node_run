@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ "$NODE_ENTRYPOINT" == "" ]]; then
+	NODE_ENTRYPOINT="/data/src/index.js"
+fi
+
+if [[ "$NODE_RUN_ENV" == "local" ]]; then
+	nodemon "$NODE_ENTRYPOINT"
+else
+	node "$NODE_ENTRYPOINT"
+fi
