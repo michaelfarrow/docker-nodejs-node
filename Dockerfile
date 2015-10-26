@@ -1,4 +1,4 @@
-FROM weyforth/nodejs-base:1.0
+FROM ubuntu
 
 MAINTAINER "Mike Farrow" <contact@mikefarrow.co.uk>
 
