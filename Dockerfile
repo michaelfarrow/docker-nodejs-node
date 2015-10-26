@@ -16,7 +16,7 @@ RUN apt-get update -y && \
 RUN npm install -g --no-optional nodemon@1.4.0
 
 COPY node_run /usr/local/bin/
-RUN chmod +x /usr/local/bin//node_run
+RUN chmod +x /usr/local/bin/node_run
 
 WORKDIR /data/src
 
